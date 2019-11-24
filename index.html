@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Breather App</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Breather App</h1>
+        <div id="breathSettingsBar">
+            <p>inhale</p><input type="number" value="4" name="inhale" id="inhale" min="3" max="60" disabled="disabled">
+            <p>hold</p><input type="number" value="7" name="hold" id="hold" min="3" max="60" disabled="disabled">
+            <p>exhale</p><input type="number" value="8" name="exhale" id="exhale" min="3" max="60" disabled="disabled">
+            <p>minutes</p><input type="number" value="1" name="minutes" id="minutes" min="0.5" disabled="disabled">
+
+            <!-- font awesome icons used as settings/play buttons -->
+            <a href="#" id="settingsButton"><i class="fa fa-cog" aria-hidden="true"></i></a>
+            <a href="#" id="playButton"><i class="fa fa-play" aria-hidden="true"></i></a>
+        </div>
+        <div id="circle"></div>
+    </div>
+
+    <!-- TweenMax for using TimelineMax; TextPlugin for text updates -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/TextPlugin.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

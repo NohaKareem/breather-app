@@ -1,0 +1,73 @@
+/* CSS Document */
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 100px);
+  align-items: center;
+}
+
+.fa {
+  color: #a1bdff;
+}
+
+#circle {
+  border-radius: 100%;
+  margin: 25px auto;
+  background: #a1bdff;
+  background: radial-gradient(circle, #a1bdff 17%, white 78%);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1, #container {
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  color: #a1bdff;
+}
+
+#breathSettingsBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  line-height: 2px;
+}
+#breathSettingsBar input {
+  width: 35px;
+  text-align: center;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0);
+}
+#breathSettingsBar p, #breathSettingsBar a {
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.editMode .fa {
+  color: rgba(207, 208, 211, 0.5);
+}
+
+#breathSettingsBar input:enabled {
+  background-color: rgba(207, 208, 211, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

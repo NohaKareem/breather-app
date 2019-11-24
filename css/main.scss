@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+
+$calmBlue: rgb(161,189,255);
+$calmGray: rgb(207,208,211,0.5);
+$circleRadius: 100px; 
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 100px);
+    align-items: center;
+}
+
+.fa {
+    color: $calmBlue;
+}
+
+#circle {
+    border-radius: 100%;
+    margin: 25px auto;
+    background: $calmBlue;
+    background: radial-gradient(circle, $calmBlue 17%, rgba(255,255,255,1) 78%);
+    width: $circleRadius;
+    height: $circleRadius;
+
+    // styling for text in circle
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+h1, #container {
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    color: $calmBlue;
+}
+
+#breathSettingsBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    line-height: 2px;
+
+    input {
+        width: 35px;
+        text-align: center;
+        border: 0px;
+        background-color: rgba(255,255,255,0);
+    }
+
+    p, a {
+        // margin: 10px 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center;
+    }
+}
+
+// styling setings icon when edit mode is enabled
+.editMode .fa {
+    color: $calmGray;
+}
+
+// styling for input fields when not in edit mode, displayed as part of the page
+#breathSettingsBar input:enabled {
+    background-color: $calmGray;
+}
+
+a {
+    text-decoration: none;
+}
