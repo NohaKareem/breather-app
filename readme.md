@@ -4,4 +4,4 @@ This is a single page web breather app using CSS, JS, and GreenSock animations; 
 
 You can try it out [here](nohakareem.github.io/breather-app/)
 
-[demo](breatherApp.gif)
+![demo](breatherApp.gif)
